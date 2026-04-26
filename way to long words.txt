@@ -1,0 +1,31 @@
+#include <iostream>
+
+#include<vector>
+
+#include<string>
+
+using namespace std;
+
+int main() {
+    // your code goes here
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        string st;
+        cin >> st;
+        int n = st.length();
+        if(n>10)
+        {
+            string str = "";
+        str += st[0] + to_string(n - 2) + st[n - 1];
+        cout << str << endl;
+        }
+        else
+        {
+            cout<<st<<endl;
+        }
+    }
+
+
+}
